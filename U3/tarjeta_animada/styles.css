@@ -1,0 +1,71 @@
+:root {
+  --color-fondo: #fadef8;
+  --color-primario: #71f1ed;
+  --color-secundario: #2c3e50;
+  --color-boton: #07bf9a;
+  --color-boton-hover: #de3f97;
+  --fuente-principal: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 550;
+}
+
+.tarjeta {
+  background: rgb(234, 201, 230);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgb(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.titulo {
+  color: var(--color-secundario);
+  font-weight: 800;
+  margin-bottom: 100px;
+}
+
+.descripcion {
+  color: #3e3e3e;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.boton {
+  background-color: var(--color-boton);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: none;
+  cursor:s-resize;
+  transition: background-color 0.6s ease, transform 0.9s ease;
+}
+
+.boton:hover {
+  background-color: var(--color-boton-hover);
+  transform: scale(1.05);
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
