@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina TODO">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <header>
+        <h1>TODO LIST</h1>
+    </header>
+    
+    <main>
+        <section id="sectionForm">
+            <form id="formTarea">
+                <input autofocus name="tarea" type="text" id="inputTarea" placeholder="Escribe una tarea">
+                <button type="submit">Añadir</button>
+            </form>
+            <div class="acciones">
+                <button id="mostrarTodas">Todas</button>
+                <button id="mostrarCompletadas">Todas</button>
+                <button id="mostrarPendientes">Pendientes</button>
+            </div>
+
+            <ul id="listaTareas">
+                <li class="completada">Pan</li>
+                <li>Aceite</li>
+                <li>Roscón de reyes</li>
+            </ul>
+            <button id="eliminarCompletadas">
+                Eliminar Completadas
+            </button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

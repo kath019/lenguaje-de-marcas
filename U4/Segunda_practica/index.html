@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2><strong>Práctica DOM</strong></h2>
+    <p id="contador">0/0 seleccionados</p>
+
+    <div class="acciones">
+        <h3><strong>Acciones</strong></h3>
+        <input type="text" id="texto" placeholder="Texto a buscar y marcar">
+        <label><input type="radio" name="accion" value="marcar" checked> Marcar</label>
+        <label><input type="radio" name="accion" value="eliminar"> Eliminar</label>
+        <label><input type="radio" name="accion" value="añadir"> Añadir</label>
+        <button id="aplicar">Aplicar</button>
+    </div>
+
+    <ul id="lista">
+      <li>Manzana</li>
+      <li>Pera</li>
+      <li>Melocotón</li>
+      <li>Sandía</li>
+      <li>Uva</li>
+      <li>Plátano</li>
+      <li>Kiwi</li>
+      <li>Melón</li>
+      <li>Fresa</li>
+      <li>Naranja</li>
+    </ul>
+
+    <button id="eliminarMarcados">Eliminar marcados</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
